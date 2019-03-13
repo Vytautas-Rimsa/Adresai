@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="import.js"></script>
+    <link href="style.css" rel="stylesheet/css">
+</head>
+<body>
+<form method="post" action="php.php">
+
+    <div class="item municipality">
+        <div class="key">
+            <label for="municipality">Savivaldybė</label>
+        </div>
+        <div class="value">
+            <select class="select2 municipality" name="municipality" data-key="municipality" data-value="" data-placeholder="Pasirinkite savivaldybę">
+            </select>
+        </div>
+    </div>
+
+    <div class="item city">
+        <div class="key">
+            <label for="city">Miestas</label>
+        </div>
+        <div class="value">
+            <select id="city" class="select2 city" name="city" data-key="city" data-value="" data-placeholder="Pasirinkite miestą">
+            </select>
+        </div>
+    </div>
+
+    <div class="item address">
+        <div class="key">
+            <label for="address">Adresas</label>
+        </div>
+        <div class="value">
+            <input id="address" class="address text" name="address" type="text" value="" placeholder="Įrašykite gatvę ir namo numerį">
+        </div>
+    </div>
+
+    <div class="item zipcode">
+        <div class="key">
+            <label for="zipcode">Pašto kodas</label>
+        </div>
+        <div class="value">
+            <input id="zipcode" class="zipcode text" type="text" name="zipcode" value="">
+            <div class="info">
+                Nežinai savo pašto kodo? <a href="https://postit.lt/" target="_blank">Pašto kodų paieška</a>.
+            </div>
+        </div>
+    </div>
+
+    <div class="item submit">
+        <div class="key">
+        </div>
+        <div class="value">
+            <div>Paspaudus siųsti bus atstatyti duomenys</div>
+            <button class="btn btn-primary" type="submit">Siųsti</button>
+        </div>
+    </div>
+
+</form>
+</body>
+</html>

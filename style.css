@@ -1,0 +1,59 @@
+div.item{
+    display: none;
+    margin: 10px 0;
+    overflow: hidden;
+}
+div.item.municipality{
+    display: block;
+}
+div.key{
+    float: left;
+    width: 35%;
+    line-height: 24px;
+    padding-top: 6px;
+}
+div.value{
+    float: left;
+    width: 65%;
+}
+
+input.text{
+    border: 1px solid #aaa;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #444;
+    font-size: 16px;
+    text-indent: 7px;
+    width: 100%;
+}
+select.select2,
+input.city,
+input.address{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input.zipcode{
+    width: 90px;
+    margin-right: 10px;
+}
+input.loading{
+    background: transparent url("//postit.lt/example/v2-adresu-ir-pasto-kodu-paieska/img/loading32.gif") right center no-repeat;
+    background-size: 22px 22px;
+}
+::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
+    color: #4c4c4c;
+}
+::-moz-placeholder{ /* Firefox 19+ */
+    color: #4c4c4c;
+}
+:-ms-input-placeholder{/* IE 10+ */
+    color: #4c4c4c;
+}
+:-moz-placeholder{ /* Firefox 18- */
+    color: #4c4c4c;
+}
+.ui-widget{
+    font-family: "Open Sans", "Arial", "Tahoma", sans-serif;
+}
